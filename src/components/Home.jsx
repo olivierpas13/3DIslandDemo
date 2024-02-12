@@ -56,7 +56,9 @@ const Home = () => {
         <Suspense fallback={<Loader />}>
           <directionalLight position={[1, 1, 1]} intensity={3} />
           <ambientLight intensity={0.5} />
-          <Sky />
+          <Sky 
+          isRotating={isRotating}
+          />
           <Bird />
           <Plane
             planeScale={planeScale}
